@@ -16,8 +16,8 @@ async def display_time():
 
     while True:
         try:
-            text = await ainput("О чём вам напомнить? (Или '-' для выхода): ")
-            if text.lower() == '-':
+            text = await ainput("О чём вам напомнить? (Или 'exit' для выхода): ")
+            if text.lower() == 'exit':
                 print('Спасибо за использование таймера. Будем ждать вас еще!')
                 break
 
@@ -28,8 +28,8 @@ async def display_time():
 
             tasks.append(asyncio.create_task(single_reminder(text, counting_time(local_time))))
 
-            count_reminders = await ainput('Хотите добавить еще напоминаний? (+/-): ')
-            if count_reminders == '-':
+            count_reminders = await ainput('Хотите добавить еще напоминаний? (y,yes/n,no): ')
+            if count_reminders == 'no' or count_reminders == 'n':
                 print('Хорошо. Мы напомним вам о ваших задачах, ожидайте...')
                 break
 
