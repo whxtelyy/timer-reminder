@@ -4,7 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "async-reminder"
-version = "timer-reminder v0.1.0"
-description = "Асинхронный консольный таймер-напоминалка"
+version = "0.2.0"
+description = "Асинхронный консольный таймер-напоминалка с поддержкой абсолютного времени"
+license = "MIT"
 dependencies = ["aioconsole>=1.0.0"]
 requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/whxtelyy/timer-reminder"
