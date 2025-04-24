@@ -3,7 +3,7 @@ requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "async-reminder"
+name = "timer-reminder"
 version = "0.2.0"
 description = "Асинхронный консольный таймер-напоминалка с поддержкой абсолютного времени"
 license = "MIT"
